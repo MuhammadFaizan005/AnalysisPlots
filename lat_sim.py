@@ -36,7 +36,7 @@ def bandwidth_o_time_single(data):
 
         # Save individual plot
         file_path = os.path.join(r"FDNN-IUB\Data Images" f"{li}.png")
-        plt.savefig(file_path)
+        #ptl.savefig(file_path)
         print(f"Saved: {file_path}")
         plt.close()
 
@@ -77,7 +77,7 @@ def plot_mul_single(data):
     plt.legend()
     plt.grid(False)
     plt.show()
-    plt.savefig(f"FDNN-IUB\Data Images\All Bandwidths.png")
+    #ptl.savefig(f"FDNN-IUB\Data Images\All Bandwidths.png")
 def plot_graphs(figx=None,figy=None,x_p=None,y_p=None,mul=False,mul_plot=0,plotlist=[],m_k=None,lb=None,ls=None,x=None,y=None,lengend="",grid=False,show=False,name=None,color="blue",tight=False):
     plt.figure(figsize=(figx,figy))
     labels=[]
@@ -99,8 +99,8 @@ def plot_graphs(figx=None,figy=None,x_p=None,y_p=None,mul=False,mul_plot=0,plotl
     plt.grid(grid)
     if show:
         plt.show()
-    if name:
-        plt.savefig(f"FDNN-IUB\Data Images\{name}")
+    # if name:
+        #ptl.savefig(f"FDNN-IUB\Data Images\{name}")
     if tight:
         plt.tight_layout()
     plt.close() 
